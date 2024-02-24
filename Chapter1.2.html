@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter1.2</title>
+  <link rel="stylesheet" href="style1.2.css">
+</head>
+<body>
+  <div class="dbms">
+<!---------------------------------------------------Chapter Navbar--------------------->
+    <div class="chapters">
+      <a href="Chapter1.1.html"><h2>Chapter 1.1</h2></a>
+      <a href="Chapter1.2.html"><h2>Chapter 1.2</h2></a>
+      <a href="Chapter1.3.html"><h2>Chapter 1.3</h2></a>
+    </div>
+<!----------------------------------------------------Relational Data Model------------>
+    <div class="rdm">
+      <h2>Relational Data Model</h2>
+      <p>It was introduced by Edgar Codd in 1970.The relational data model is a conceptual model used in database management systems to organize and structure data.It can represent as a table with columns and rows.</p>
+      <p><b>Tables:</b>In the relational model, data is organized into tables, also known as relations. Each table consists of rows and columns.</p>
+      <p><b>Relation Schema:</b>Relation schema defines the design and structure of the relation like it consists of the relation name, set of attributes/field names/column names. every attribute would have an associated domain. </p>
+      <p><b>Relation Instance:</b>relation instance is a finite set of tuples that never contain duplicate values. 
+      </p>
+      <p><b>Relation Key:</b>a relational key is a field or a combination of fields that uniquely identifies a record in a table. Keys play a crucial role in establishing relationships between tables and ensuring data integrity.</p>
+      <p><b>Attribute Domain:</b>Every attribute has some pre-defined value and scope which is known as attribute domain.</p>
+      <p><b>Null Value:</b>The value which is not known or unavailable is called NULL value. It is represented by blank space. </p>
+    </div>
+    <div class="constraints">
+      <h2>Relational Integrity Constraints</h2>
+      <p>Relational Integrity Constraints are rules that help to maintain the accuracy and consistency of data in database.It can also be used to enforce relationships between tables.
+      </p>
+      <p>It is mostly divided into three main categories are:</p>
+      <p>Domain constraints</p>
+      <p>Key Constraints</p>
+      <p>Referential Integrity Constraints</p>
+    </div>
+<!---------------------------Types of Constraints--------->
+    <div class="types">
+      <div class="domain">
+        <h2>Domain Constraints</h2>
+        <p>Domain constraints in a database management system (DBMS) refer to the rules and restrictions applied to the values that can be stored in a specific column or attribute of a database table.</p>
+        <p></p>
+      </div>
+      <div class="key">
+        <h2>Key constraints</h2>
+        <p>Keyare the entity set that is used to identify an entity within its entity set uniquely.
+          An entity set can have multiple keys, but out of which one key will be the primary key. A primary key can contain a unique and null value in the relational table.</p>
+      </div>
+      <div class="referential">
+        <h2>Referential Integrity Constraints</h2>
+        <p>A referential integrity constraint is specified between two tables.
+          In the Referential integrity constraints, if a foreign key in Table 1 refers to the Primary Key of Table 2, then every value of the Foreign Key in Table 1 must be null or be available in Table 2.</p>
+      </div>
+    </div>
+<!----------------------------Operations------------------>
+    <div class="operations">
+      <h2>Operations in Relational Model</h2>
+      <div class="oper">
+      <div class="insert">
+        <h3>Insert</h3>
+        <p>The insert operation gives values of the attribute for a new tuple which should be inserted into a relation.</p>
+      </div>
+      <div class="update">
+        <h3>Update</h3>
+      </div>
+      <div class="delete">
+        <h3>Delete</h3>
+      </div>
+      <div class="select">
+        <h3>Select</h3>
+      </div>
+      </div>
+    </div>
+<!---------------------Advantages and Disadvantages------>
+    <div class="ad_dis">
+      <div class="advantage">
+        <h2>Advantages</h2>
+        <p>Data Integrity</p>
+        <p>Data Retrieval</p>
+        <p>Security</p>
+        <p>Scalability</p>
+        <p>Data Independence</p>
+      </div>
+      <div class="disadvantage">
+        <h2>Disadvantages</h2>
+        <p>Complexity of Design</p>
+        <p>Schema Modifications</p>
+        <p>Learning Curve</p>
+        <p>Performance Concerns:</p>
+      </div>
+    </div>
+<!---------------------Anamolies-------------------------->
+    <div class="anamolies">
+      <h2>Anomalies</h2>
+      <p>Anomalies are irregularities or inconsistencies that occur in a database, disrupting the normal functioning and data integrity.It can lead to significant problems like data redundancy, data loss, and incorrect data.</p>
+      <p>Anomalies in DBMS can be broadly categorized into three types:<br>Update Anomalies<br>Insert Anomalies<br>Delete Anomalies</p>
+      <h3>Update Anomaly</h3><p>Update anomalies occur when the same data is repeated in multiple rows, and changes are made in some but not all instances.</p>
+      <h3>Insert Anomaly</h3><p>Insert anomalies occur when certain attributes cannot be inserted into the database due to missing additional data. </p>
+      <h3>Delete Anomaly</h3><p>Delete anomalies occur when deleting a certain row inadvertently leads to the deletion of other important data.</p>
+      <h2>Super keys:</h2><p>A super key is a set of one or more attributes that can uniquely identify a record within a table. It may contain more attributes than necessary to uniquely identify a record.</p>
+    </div>
+<!-----------------------------E-R model----------------->
+    <div class="Er_diagram">
+      <p>An Entity Relationship Diagram (ER Diagram) pictorially explains the relationship between entities to be stored in a database.It acts as a framework created with specialized symbols for the purpose of defining the relationship between the database entities. ER diagram is created based on three principal components: entities, attributes, and relationships.</p>
+      <h3>Components of ER Diagram</h3>
+      <p>This model is based on three main components:<br>Entities<br>Attributes<br>Relationships</p>
+      <h3>Why use ER Diagrams?</h3>
+      <p>Helps to describe entities, attributes, relationships.</p>
+      <p>It is used to describe the conceptual design of databases.</p>
+      <p>It helps both users and database developers to preview the structure of the database before implementing the database.</p>
+      <p> ERD Diagram allows you to communicate with the logical structure of the database to users</p>
+      <!-- Image -->
+    </div>
+    <div class="Er_model">
+      <p>ER model in DBMS is the high-level data model.An Entity-relationship model (ER model) describes the structure of a database with the help of a diagram. It develops a conceptual design for a database that provides a very simple and straightforward view of the data.</p>
+      <p>The ER diagram was proposed by Peter Chen in 1971 as a visual tool to represent the ER model.He wanted to use the ER model as a conceptual modeling approach for DBMS.</p>
+      <h4>Facts about ER model</h4>
+      <p>ER model allows you to draw Database Design</p>
+      <p>Widely used in Database Design</p>
+      <p>It is an easy to use graphical tool for modeling data</p>
+    </div>
+    <div class="symbols">
+      <p>ER Diagram symbols help explain the visual model of the data structure in an application. It usually shows a simplified view of how a database is organized by presenting a data picture.</p>
+      <h3>Symbols used</h3>
+      <p><b>Rectangles:</b>Rectangles represent Entities in the ER Model.</p>
+      <p><b>Ellipses:</b>Ellipses represent Attributes in the ER Model.</p>
+      <p><b>Diamond:</b>Diamonds represent Relationships among Entities.</p>
+      <p><b>Lines:</b>Lines represent attributes to entities and entity sets with other relationship types.</p>
+      <p><b>Double Ellipse:</b>Double Ellipses represent Multi-Valued Attributes.</p>
+      <p><b>Double Rectangle:</b>Double Rectangle represents a Weak Entity.</p>
+      <!-- image -->
+    </div>
+    <div class="entity">
+      <h3>Entity</h3>
+      <p>An entity is a piece of data that is stored in the database. An entity can be a person, place, thing, or even an event. It is described as a data object which has some attributes and is related to other Entities via some Relationship.</p>
+      <p>For example, in a College database, the entities can be Professor, Students, Courses, etc.</p>
+    </div>
+    <div class="entity_set">
+      <h3>Entity Set</h3>
+      <p>An entity set in DBMS is a set that collectively represents a group of entities of a similar type.For Ex-A university may have some departments. All these departments employ various lecturers and offer several programs.</p>
+      <div class="weak">
+      <h3>Weak Entity Set</h3>
+      <p>Weak entity set in DBMS is an entity set that does not have a primary key, i.e., there exists no attribute that can uniquely represent each entity in the entity set.<br>For Example: An entity set of cars having attributes such as a car's color, a car's name is a weak entity since two cars can have the same color as well as the same name. So, none of the attributes can be considered as the primary key and hence the entity set is a weak entity set.<br>weak entity sets are represented by a double rectangle.</p>
+    </div>
+      <div class="strong">
+        <h3>Strong Entity Set</h3>
+        <p>Strong entity set in DBMS is the entity set in which there exists a primary key, i.e., there exists an attribute that can uniquely represent each element in the entity.<br> For Example:**, An entity set of cars having attributes such as a car's registration number, car's color, car's name is a strong entity since no two cars can have the same registration number. So, the attributes registration number can be considered as the primary key, and hence the entity set is a strong entity set.<br>strong entities are represented by a rectangle.</p>
+      </div>
+    </div>
+<!--Attribute-->
+      <div class="attribute">
+        
+      </div>
+<!--Relationship-->
+      <div class="relationship">
+
+      </div>
+  </div>
+</body>
+</html>
